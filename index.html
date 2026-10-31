@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediGuard AI - Healthcare Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2966/2966327.png">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">MediGuard AI</div>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#assistant">AI Assistant</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+    <section class="hero" id="home">
+    <div class="hero-content">
+        <span class="hero-tag">AI POWERED HEALTHCARE</span>
+
+        <h1>Your Health,<br>
+            Our Intelligent Support.</h1>
+
+        <p>
+            Meet MediGuard AI — a healthcare virtual assistant
+            designed to provide accessible health information
+            and basic symptom guidance.
+        </p>
+
+        <a href="#assistant" class="hero-btn">
+            Try AI Assistant
+        </a>
+    </div>
+
+    <div class="hero-icon">
+        <span>✚</span>
+        <h2>MediGuard AI</h2>
+        <p>Smart Healthcare Support</p>
+    </div>
+</section>
+<section class="about-section" id="about">
+    <div class="section-heading">
+        <span>ABOUT OUR PROJECT</span>
+        <h2>What is MediGuard AI?</h2>
+        <p>
+            Making healthcare information more accessible through technology.
+        </p>
+    </div>
+
+    <div class="about-content">
+        <div class="about-card">
+            <h3>Our Mission</h3>
+            <p>
+                To provide a simple and accessible healthcare information
+                platform through an interactive virtual assistant.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>Our Vision</h3>
+            <p>
+                To explore how AI-powered technology can support people
+                in understanding basic health information.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="features-section" id="features">
+    <div class="section-heading">
+        <span>OUR FEATURES</span>
+        <h2>What MediGuard AI Offers</h2>
+        <p>Simple tools designed to support healthcare information access.</p>
+    </div>
+
+    <div class="features-grid">
+
+        <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>AI Chat Assistant</h3>
+            <p>Interactive chat interface for basic health-related questions.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🩺</div>
+            <h3>Symptom Information</h3>
+            <p>Provides basic keyword-based information about selected symptoms.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🚨</div>
+            <h3>Emergency Alerts</h3>
+            <p>Displays emergency guidance when certain warning keywords are entered.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Designed to work across desktop and mobile screens.</p>
+        </div>
+
+    </div>
+</section>
+<section class="how-section" id="how-it-works">
+    <div class="section-heading">
+        <span>SIMPLE PROCESS</span>
+        <h2>How It Works</h2>
+        <p>Get started with MediGuard AI in three simple steps.</p>
+    </div>
+
+    <div class="steps-container">
+
+        <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Open Assistant</h3>
+            <p>Visit the AI Assistant section on this website.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Enter Your Query</h3>
+            <p>Type a basic health-related question or symptom.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>View Information</h3>
+            <p>Read the basic information provided by the demo assistant.</p>
+        </div>
+
+    </div>
+</section>
+<section class="assistant-section" id="assistant">
+    <div class="section-heading">
+        <span>TRY OUR ASSISTANT</span>
+        <h2>Your Healthcare Virtual Assistant</h2>
+        <p>Enter a health-related query to explore this educational demo.</p>
+    </div>
+
+    <main class="chat-container">
+    </section>
+     <button class="clear-btn" onclick="clearChat()">Clear Chat</button>
+    <div class="chat-box" id="chatBox">
+        <div class="bot-message">
+            Hello! Welcome to MediGuard AI.
+            How can I help you today?
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput"
+            placeholder="Describe your symptoms...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <section class="disclaimer-section" id="disclaimer">
+    <div class="disclaimer-card">
+        <h3>⚠️ Medical Disclaimer</h3>
+        <p>
+            MediGuard AI is an educational demonstration project.
+            It does not provide medical diagnosis, treatment, or
+            professional medical advice. Its keyword-based responses
+            may be incomplete or inaccurate. Always consult a qualified
+            healthcare professional for medical concerns. For emergencies
+            in India, call 112 or visit the nearest emergency department.
+        </p>
+    </div>
+</section>
+    <section class="contact-section" id="contact">
+    <div class="section-heading">
+        <span>GET IN TOUCH</span>
+        <h2>Project Developer</h2>
+        <p>Designed and developed as an educational AI healthcare project.</p>
+    </div>
+
+    <div class="contact-card">
+        <h3>Mrunal K</h3>
+        <p>AI & Machine Learning Graduate</p>
+        <p>Python Full Stack Developer</p>
+        <p>Project: MediGuard AI</p>
+    </div>
+</section>
+
+</main>
+<footer class="footer">
+    <p>© 2026 MediGuard AI | Healthcare Virtual Assistant</p>
+    <p>For educational purposes only. Not a substitute for medical advice.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
